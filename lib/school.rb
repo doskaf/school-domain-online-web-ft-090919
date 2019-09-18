@@ -10,7 +10,7 @@ class School
     if @roster.none?(grade)
       @roster[grade] = []
       @roster[grade] << name
-    else
+    elsif @roster.include?(grade)
     @roster[grade] << name
     end
   end
