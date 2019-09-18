@@ -7,9 +7,10 @@ class School
   end
   
   def add_student(name, grade)
-    if @roster.none?(grade)
-      @roster[grade] = []
+    hash = {}
+    if hash.none?(grade)
+      hash[grade] = []
     end
-      @roster[grade] << name
+      hash[grade] << name
   end
 end
