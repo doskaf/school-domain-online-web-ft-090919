@@ -12,5 +12,6 @@ class School
       hash[grade] = []
     end
       hash[grade] << name
+      hash = @roster
   end
 end
